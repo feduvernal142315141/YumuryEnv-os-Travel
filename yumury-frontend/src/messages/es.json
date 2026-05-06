@@ -1,0 +1,156 @@
+{
+  "common": {
+    "buy": "Comprar",
+    "addToCart": "Añadir al carrito",
+    "viewDetails": "Ver detalles",
+    "continue": "Continuar",
+    "back": "Atrás",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "loading": "Cargando...",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "from": "Desde",
+    "free": "Gratis",
+    "outOfStock": "Agotado",
+    "lowStock": "Quedan pocas unidades",
+    "all": "Todos"
+  },
+  "header": {
+    "categories": "Categorías",
+    "combos": "Combos",
+    "howItWorks": "Cómo funciona",
+    "tracking": "Tracking",
+    "myAccount": "Mi cuenta",
+    "cart": "Carrito",
+    "login": "Iniciar sesión",
+    "register": "Registrarse",
+    "searchPlaceholder": "Buscar arroz, EcoFlow, motos…"
+  },
+  "footer": {
+    "tagline": "Conecta con tu familia en Matanzas",
+    "links": "Enlaces",
+    "legal": "Legal",
+    "contact": "Contacto",
+    "rights": "Todos los derechos reservados"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Envíos a Matanzas, Cuba",
+      "headline": "Conecta con tu familia en {highlight}, sin distancias",
+      "highlight": "Matanzas",
+      "subheadline": "La forma más confiable y moderna de enviarles lo que necesitan. Comida, electrodomésticos, motos eléctricas. Todo con tracking en tiempo real.",
+      "ctaPrimary": "Empezar a comprar",
+      "ctaSecondary": "Ver cómo funciona"
+    },
+    "categories": {
+      "title": "Todo lo que tu familia necesita",
+      "subtitle": "Categorías curadas con productos premium"
+    },
+    "combos": {
+      "title": "Combos curados",
+      "subtitle": "Pensados con propósito, no solo bulk",
+      "viewAll": "Ver todos los combos"
+    },
+    "testimonials": {
+      "title": "Lo que dicen nuestras familias",
+      "subtitle": "Más de 5,000 familias conectadas"
+    },
+    "howItWorks": {
+      "title": "Cómo funciona",
+      "step1Title": "Elige y arma tu pedido",
+      "step1Body": "Productos individuales o combos curados. Búsqueda rápida y Yumi te ayuda.",
+      "step2Title": "Selecciona tu familiar",
+      "step2Body": "Guarda direcciones una vez, reordena con un click.",
+      "step3Title": "Paga seguro",
+      "step3Body": "Stripe, Visa, Mastercard. Sin sobrecostos sorpresa.",
+      "step4Title": "Sigue cada paso",
+      "step4Body": "Tracking visual con fotos en cada etapa. Comparte el link con tu familiar."
+    }
+  },
+  "product": {
+    "addToCart": "Añadir al carrito",
+    "buyNow": "Comprar ahora",
+    "specs": "Especificaciones",
+    "description": "Descripción",
+    "reviews": "Reseñas",
+    "related": "También podría gustarte",
+    "estimatedDelivery": "Entrega estimada",
+    "shippingType": {
+      "standard": "Estándar",
+      "express": "Express",
+      "maritime": "Marítimo"
+    },
+    "stockLevel": {
+      "high": "En stock",
+      "medium": "Pocas unidades",
+      "low": "Últimas unidades",
+      "out": "Agotado"
+    }
+  },
+  "cart": {
+    "title": "Tu carrito",
+    "empty": "Tu carrito está vacío",
+    "emptySubtitle": "Empieza a armar el envío para tu familia",
+    "browse": "Explorar productos",
+    "subtotal": "Subtotal",
+    "shipping": "Envío",
+    "total": "Total",
+    "checkout": "Ir al checkout",
+    "continueShopping": "Seguir comprando",
+    "remove": "Eliminar"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "steps": {
+      "recipient": "Destinatario",
+      "shipping": "Envío",
+      "payment": "Pago",
+      "review": "Revisar"
+    },
+    "selectFamily": "Selecciona un familiar",
+    "addNewFamily": "Agregar nuevo familiar",
+    "giftMessage": "Mensaje de regalo (opcional)",
+    "placeOrder": "Confirmar pedido"
+  },
+  "tracking": {
+    "title": "Tracking de tu pedido",
+    "shareLink": "Compartir tracking",
+    "estimated": "Estimado",
+    "completed": "Completado",
+    "current": "En curso",
+    "pending": "Pendiente"
+  },
+  "yumi": {
+    "title": "Yumi",
+    "subtitle": "Tu asistente para armar envíos",
+    "placeholder": "Pregúntame lo que necesites…",
+    "send": "Enviar",
+    "starters": {
+      "budget": "Tengo $80 para mi mamá",
+      "family": "Combo familiar para 4 personas",
+      "blackout": "Algo para los apagones",
+      "fridge": "Necesito un refrigerador"
+    }
+  },
+  "families": {
+    "title": "Mis Familias",
+    "addNew": "Agregar familiar",
+    "alias": "Apodo",
+    "fullName": "Nombre completo",
+    "relationship": "Relación",
+    "phone": "Teléfono",
+    "address": "Dirección",
+    "municipality": "Municipio",
+    "preferences": "Preferencias",
+    "alerts": "Alertas",
+    "stats": {
+      "ordersReceived": "Pedidos recibidos",
+      "totalReceived": "Total recibido",
+      "lastOrder": "Último pedido"
+    }
+  }
+}

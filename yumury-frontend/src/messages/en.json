@@ -1,0 +1,156 @@
+{
+  "common": {
+    "buy": "Buy",
+    "addToCart": "Add to cart",
+    "viewDetails": "View details",
+    "continue": "Continue",
+    "back": "Back",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "loading": "Loading...",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "from": "From",
+    "free": "Free",
+    "outOfStock": "Out of stock",
+    "lowStock": "Only a few left",
+    "all": "All"
+  },
+  "header": {
+    "categories": "Categories",
+    "combos": "Bundles",
+    "howItWorks": "How it works",
+    "tracking": "Tracking",
+    "myAccount": "My account",
+    "cart": "Cart",
+    "login": "Sign in",
+    "register": "Sign up",
+    "searchPlaceholder": "Search rice, EcoFlow, motorbikes…"
+  },
+  "footer": {
+    "tagline": "Connect with your family in Matanzas",
+    "links": "Links",
+    "legal": "Legal",
+    "contact": "Contact",
+    "rights": "All rights reserved"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Shipping to Matanzas, Cuba",
+      "headline": "Stay connected with your family in {highlight}, no distances",
+      "highlight": "Matanzas",
+      "subheadline": "The most reliable, modern way to send what they need. Food, appliances, electric motorbikes. All with real-time tracking.",
+      "ctaPrimary": "Start shopping",
+      "ctaSecondary": "See how it works"
+    },
+    "categories": {
+      "title": "Everything your family needs",
+      "subtitle": "Curated categories with premium products"
+    },
+    "combos": {
+      "title": "Curated bundles",
+      "subtitle": "Designed with purpose, not just bulk",
+      "viewAll": "See all bundles"
+    },
+    "testimonials": {
+      "title": "What our families say",
+      "subtitle": "Over 5,000 families connected"
+    },
+    "howItWorks": {
+      "title": "How it works",
+      "step1Title": "Pick and build your order",
+      "step1Body": "Individual products or curated bundles. Fast search and Yumi helps.",
+      "step2Title": "Pick a family member",
+      "step2Body": "Save addresses once, reorder with one click.",
+      "step3Title": "Pay securely",
+      "step3Body": "Stripe, Visa, Mastercard. No surprise fees.",
+      "step4Title": "Follow every step",
+      "step4Body": "Visual tracking with photos at each stage. Share the link with your family."
+    }
+  },
+  "product": {
+    "addToCart": "Add to cart",
+    "buyNow": "Buy now",
+    "specs": "Specifications",
+    "description": "Description",
+    "reviews": "Reviews",
+    "related": "You may also like",
+    "estimatedDelivery": "Estimated delivery",
+    "shippingType": {
+      "standard": "Standard",
+      "express": "Express",
+      "maritime": "Maritime"
+    },
+    "stockLevel": {
+      "high": "In stock",
+      "medium": "Few units left",
+      "low": "Last units",
+      "out": "Out of stock"
+    }
+  },
+  "cart": {
+    "title": "Your cart",
+    "empty": "Your cart is empty",
+    "emptySubtitle": "Start building a shipment for your family",
+    "browse": "Browse products",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "total": "Total",
+    "checkout": "Go to checkout",
+    "continueShopping": "Continue shopping",
+    "remove": "Remove"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "steps": {
+      "recipient": "Recipient",
+      "shipping": "Shipping",
+      "payment": "Payment",
+      "review": "Review"
+    },
+    "selectFamily": "Select a family member",
+    "addNewFamily": "Add new family member",
+    "giftMessage": "Gift message (optional)",
+    "placeOrder": "Place order"
+  },
+  "tracking": {
+    "title": "Order tracking",
+    "shareLink": "Share tracking",
+    "estimated": "Estimated",
+    "completed": "Completed",
+    "current": "In progress",
+    "pending": "Pending"
+  },
+  "yumi": {
+    "title": "Yumi",
+    "subtitle": "Your shipping assistant",
+    "placeholder": "Ask me anything…",
+    "send": "Send",
+    "starters": {
+      "budget": "I have $80 for my mom",
+      "family": "Family bundle for 4 people",
+      "blackout": "Something for the blackouts",
+      "fridge": "I need a fridge"
+    }
+  },
+  "families": {
+    "title": "My Families",
+    "addNew": "Add family member",
+    "alias": "Nickname",
+    "fullName": "Full name",
+    "relationship": "Relationship",
+    "phone": "Phone",
+    "address": "Address",
+    "municipality": "Municipality",
+    "preferences": "Preferences",
+    "alerts": "Alerts",
+    "stats": {
+      "ordersReceived": "Orders received",
+      "totalReceived": "Total received",
+      "lastOrder": "Last order"
+    }
+  }
+}
