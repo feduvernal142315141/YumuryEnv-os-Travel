@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Facebook, Instagram, MessageCircle, Phone, Mail, MapPin } from "lucide-react";
-import { Logo } from "./Logo";
 import {
   Accordion,
   AccordionContent,
@@ -28,7 +27,7 @@ const columns: Column[] = [
     title: "Soporte",
     links: [
       { label: "Cómo funciona", href: "/como-funciona" },
-      { label: "Preguntas frecuentes", href: "/preguntas-frecuentes" },
+      { label: "Preguntas frecuentes", href: "/faq" },
       { label: "Tracking de envío", href: "/tracking/pub_a3f5g7h9" },
       { label: "Contacto", href: "/contacto" },
       { label: "Yumi (asistente)", href: "/yumi" },

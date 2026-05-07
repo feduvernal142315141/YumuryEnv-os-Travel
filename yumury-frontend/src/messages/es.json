@@ -17,7 +17,22 @@
     "free": "Gratis",
     "outOfStock": "Agotado",
     "lowStock": "Quedan pocas unidades",
-    "all": "Todos"
+    "all": "Todos",
+    "viewAll": "Ver todos",
+    "close": "Cerrar",
+    "confirm": "Confirmar",
+    "submit": "Enviar",
+    "yes": "Sí",
+    "no": "No",
+    "or": "o",
+    "and": "y",
+    "items": "artículos",
+    "noResults": "Sin resultados",
+    "tryAgain": "Intentar de nuevo",
+    "goHome": "Ir al inicio",
+    "learnMore": "Conocer más",
+    "savedChanges": "Cambios guardados",
+    "copied": "Copiado al portapapeles"
   },
   "header": {
     "categories": "Categorías",
@@ -28,14 +43,21 @@
     "cart": "Carrito",
     "login": "Iniciar sesión",
     "register": "Registrarse",
-    "searchPlaceholder": "Buscar arroz, EcoFlow, motos…"
+    "logout": "Cerrar sesión",
+    "searchPlaceholder": "Buscar arroz, EcoFlow, motos…",
+    "skipToContent": "Saltar al contenido principal"
   },
   "footer": {
     "tagline": "Conecta con tu familia en Matanzas",
     "links": "Enlaces",
     "legal": "Legal",
     "contact": "Contacto",
-    "rights": "Todos los derechos reservados"
+    "rights": "Todos los derechos reservados",
+    "howItWorks": "Cómo funciona",
+    "aboutUs": "Sobre nosotros",
+    "faq": "Preguntas frecuentes",
+    "terms": "Términos y condiciones",
+    "privacy": "Política de privacidad"
   },
   "home": {
     "hero": {
@@ -44,7 +66,10 @@
       "highlight": "Matanzas",
       "subheadline": "La forma más confiable y moderna de enviarles lo que necesitan. Comida, electrodomésticos, motos eléctricas. Todo con tracking en tiempo real.",
       "ctaPrimary": "Empezar a comprar",
-      "ctaSecondary": "Ver cómo funciona"
+      "ctaSecondary": "Ver cómo funciona",
+      "ordersDelivered": "+10,000 pedidos entregados",
+      "guarantee": "Garantía Yumury",
+      "rating": "4.9 / 5 · 14 municipios"
     },
     "categories": {
       "title": "Todo lo que tu familia necesita",
@@ -69,6 +94,28 @@
       "step3Body": "Stripe, Visa, Mastercard. Sin sobrecostos sorpresa.",
       "step4Title": "Sigue cada paso",
       "step4Body": "Tracking visual con fotos en cada etapa. Comparte el link con tu familiar."
+    },
+    "bestsellers": {
+      "title": "Los más vendidos",
+      "subtitle": "Lo que las familias cubanas más piden"
+    },
+    "families": {
+      "title": "Mis Familias",
+      "subtitle": "Guarda los datos de tus seres queridos. Reordena en un click.",
+      "cta": "Conoce Mis Familias"
+    },
+    "tracking": {
+      "title": "Tracking Visual",
+      "subtitle": "Sigue cada paso de tu envío con fotos en tiempo real."
+    },
+    "guarantee": {
+      "title": "La Garantía Yumury",
+      "subtitle": "Tu tranquilidad es nuestra prioridad"
+    },
+    "cta": {
+      "title": "¿Listo para enviar?",
+      "subtitle": "Tu familia en Matanzas te espera",
+      "button": "Empezar a comprar"
     }
   },
   "product": {
@@ -79,6 +126,7 @@
     "reviews": "Reseñas",
     "related": "También podría gustarte",
     "estimatedDelivery": "Entrega estimada",
+    "addedToCart": "Añadido al carrito",
     "shippingType": {
       "standard": "Estándar",
       "express": "Express",
@@ -101,7 +149,9 @@
     "total": "Total",
     "checkout": "Ir al checkout",
     "continueShopping": "Seguir comprando",
-    "remove": "Eliminar"
+    "remove": "Eliminar",
+    "itemAdded": "Producto añadido al carrito",
+    "undo": "Deshacer"
   },
   "checkout": {
     "title": "Checkout",
@@ -114,7 +164,9 @@
     "selectFamily": "Selecciona un familiar",
     "addNewFamily": "Agregar nuevo familiar",
     "giftMessage": "Mensaje de regalo (opcional)",
-    "placeOrder": "Confirmar pedido"
+    "placeOrder": "Confirmar pedido",
+    "orderSuccess": "¡Pedido confirmado!",
+    "orderSuccessMessage": "Tu pedido está en camino. Te enviaremos actualizaciones por email."
   },
   "tracking": {
     "title": "Tracking de tu pedido",
@@ -122,7 +174,11 @@
     "estimated": "Estimado",
     "completed": "Completado",
     "current": "En curso",
-    "pending": "Pendiente"
+    "pending": "Pendiente",
+    "shareWhatsApp": "Compartir por WhatsApp",
+    "copyLink": "Copiar enlace",
+    "orderNumber": "Pedido",
+    "estimatedDelivery": "Entrega estimada"
   },
   "yumi": {
     "title": "Yumi",
@@ -147,10 +203,268 @@
     "municipality": "Municipio",
     "preferences": "Preferencias",
     "alerts": "Alertas",
+    "reorder": "Reordenar",
+    "history": "Historial",
+    "noOrders": "Sin envíos aún",
     "stats": {
       "ordersReceived": "Pedidos recibidos",
       "totalReceived": "Total recibido",
       "lastOrder": "Último pedido"
+    },
+    "empty": {
+      "title": "No tienes familias guardadas",
+      "subtitle": "Agrega a tus seres queridos en Matanzas para enviarles más rápido.",
+      "cta": "Agregar mi primer familiar"
     }
+  },
+  "account": {
+    "title": "Mi cuenta",
+    "welcome": "¡Hola, {name}!",
+    "nav": {
+      "overview": "Resumen",
+      "orders": "Pedidos",
+      "families": "Familias",
+      "settings": "Configuración"
+    },
+    "stats": {
+      "totalOrders": "Total pedidos",
+      "totalSpent": "Total enviado",
+      "familiesCount": "Familias guardadas",
+      "activeOrders": "Pedidos activos"
+    },
+    "recentOrders": "Pedidos recientes",
+    "viewAllOrders": "Ver todos los pedidos",
+    "quickActions": "Acciones rápidas",
+    "reorderLast": "Reordenar último pedido",
+    "addFamily": "Añadir nueva familia",
+    "viewTracking": "Ver tracking activo",
+    "talkToYumi": "Hablar con Yumi",
+    "myFamilies": "Mis familias",
+    "viewAllFamilies": "Ver todas mis familias",
+    "loginPrompt": "Inicia sesión para ver tu cuenta",
+    "loginPromptSubtitle": "Accede a tus pedidos, familias guardadas y configuración."
+  },
+  "settings": {
+    "title": "Configuración",
+    "personalInfo": "Información personal",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "avatar": "Foto de perfil",
+    "notifications": "Notificaciones",
+    "emailOrders": "Email de pedido",
+    "emailOrdersDesc": "Confirmación y actualizaciones de estado",
+    "smsTracking": "SMS de tracking",
+    "smsTrackingDesc": "Alertas de envío por mensaje de texto",
+    "promotions": "Promociones",
+    "promotionsDesc": "Ofertas y descuentos especiales",
+    "newsletter": "Newsletter",
+    "newsletterDesc": "Novedades y tips semanales",
+    "digestFrequency": "Frecuencia de digest",
+    "daily": "Diario",
+    "weekly": "Semanal",
+    "never": "Nunca",
+    "languageRegion": "Idioma y región",
+    "language": "Idioma",
+    "theme": "Tema",
+    "themeLight": "Claro",
+    "themeDark": "Oscuro",
+    "themeSystem": "Sistema",
+    "currency": "Moneda",
+    "privacy": "Privacidad",
+    "showTestimonials": "Permitir que mis testimonios se muestren",
+    "shareData": "Compartir datos para mejorar el servicio",
+    "dangerZone": "Zona de peligro",
+    "downloadData": "Descargar mis datos",
+    "deleteAccount": "Eliminar mi cuenta",
+    "deleteConfirm": "¿Estás seguro?",
+    "deleteConfirmDesc": "Esta acción es irreversible. Se borrarán tus familias guardadas y todo el historial.",
+    "deleteTypeConfirm": "Escribe ELIMINAR para confirmar"
+  },
+  "orders": {
+    "title": "Mis Pedidos",
+    "subtitle": "Historial y seguimiento de tus envíos",
+    "active": "En tránsito",
+    "delivered": "Entregados",
+    "all": "Todos",
+    "searchPlaceholder": "Buscar por número de pedido o destinatario...",
+    "noOrders": "No hay pedidos en esta categoría",
+    "empty": {
+      "title": "Aún no has hecho pedidos",
+      "subtitle": "Cuando hagas tu primer envío a Matanzas, lo verás aquí.",
+      "cta": "Explorar catálogo"
+    },
+    "status": {
+      "pending": "Pendiente",
+      "confirmed": "Confirmado",
+      "preparing": "En preparación",
+      "shipped": "Enviado",
+      "inCustoms": "En aduana",
+      "inWarehouse": "En almacén",
+      "outForDelivery": "En reparto",
+      "delivered": "Entregado",
+      "incident": "Incidencia"
+    }
+  },
+  "howItWorks": {
+    "hero": {
+      "title": "Cómo enviar a Matanzas con Yumury",
+      "subtitle": "4 pasos. Sin sorpresas. Sin estrés."
+    },
+    "step1": {
+      "badge": "Paso 1",
+      "title": "Elige lo que vas a enviar",
+      "body": "Catálogo curado de 160+ productos: alimentos, electrodomésticos, motos eléctricas. Combos para cada situación — apagones, cumpleaños, emergencias.",
+      "cta": "Explorar catálogo"
+    },
+    "step2": {
+      "badge": "Paso 2",
+      "title": "Selecciona a tu familiar",
+      "body": "Guarda los datos de tus seres queridos una vez: nombre, dirección, teléfono, preferencias. Reordena en un click sin volver a escribir nada.",
+      "cta": "Conoce Mis Familias"
+    },
+    "step3": {
+      "badge": "Paso 3",
+      "title": "Paga seguro",
+      "body": "Pago 100% seguro con Stripe. Visa, Mastercard, American Express. No almacenamos datos de tarjeta. Sin costos ocultos."
+    },
+    "step4": {
+      "badge": "Paso 4",
+      "title": "Sigue tu envío en tiempo real",
+      "body": "Tracking visual con fotos en cada etapa: confirmación, preparación, tránsito, entrega. Comparte el link con tu familia por WhatsApp.",
+      "cta": "Ver demo de tracking"
+    },
+    "faq": {
+      "title": "Preguntas frecuentes"
+    },
+    "ctaFinal": {
+      "title": "Empieza a enviar hoy",
+      "subtitle": "Tu familia en Matanzas te espera",
+      "cta": "Ir al catálogo"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Conectamos familias entre Miami y Matanzas",
+      "subtitle": "Porque la distancia no debería ser un obstáculo para cuidar a los tuyos."
+    },
+    "mission": {
+      "title": "Nuestra misión",
+      "body": "Yumury nació porque sabemos lo que significa estar lejos de tu familia. Cada domingo sin el cafecito con mamá, cada cumpleaños por videollamada, cada apagón sin poder hacer nada. Decidimos cambiarlo."
+    },
+    "values": {
+      "title": "Nuestros valores",
+      "trust": "Confianza",
+      "trustDesc": "Tu pedido es sagrado. Lo cuidamos como si fuera nuestro.",
+      "transparency": "Transparencia",
+      "transparencyDesc": "Tracking con fotos en cada etapa. Sin sorpresas, sin excusas.",
+      "speed": "Rapidez",
+      "speedDesc": "Express en 3-5 días. Marítimo para lo grande. Siempre a tiempo.",
+      "care": "Cuidado",
+      "careDesc": "Empacamos con amor. Cada paquete lleva un pedacito de ti."
+    },
+    "matanzas": {
+      "title": "Por qué Matanzas",
+      "subtitle": "Desde el Yumurí hasta Varadero. Conocemos cada municipio."
+    },
+    "team": {
+      "title": "Nuestro equipo"
+    },
+    "stats": {
+      "title": "En números",
+      "orders": "pedidos entregados",
+      "municipalities": "municipios",
+      "rating": "valoración",
+      "support": "soporte"
+    }
+  },
+  "faqPage": {
+    "title": "Preguntas frecuentes",
+    "subtitle": "Todo lo que necesitas saber sobre Yumury",
+    "searchPlaceholder": "Buscar en preguntas frecuentes...",
+    "noResults": "No encontramos preguntas que coincidan",
+    "needHelp": "¿No encuentras tu respuesta?",
+    "needHelpSubtitle": "Nuestro equipo está listo para ayudarte.",
+    "contactUs": "Contáctanos",
+    "askYumi": "Pregúntale a Yumi"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Estamos aquí para ayudarte",
+    "whatsapp": "WhatsApp",
+    "whatsappDesc": "Respuesta inmediata",
+    "emailTitle": "Email",
+    "emailDesc": "Respuesta en 24h",
+    "phoneTitle": "Teléfono",
+    "phoneDesc": "Lun-Vie 9am-6pm",
+    "formTitle": "Envíanos un mensaje",
+    "name": "Nombre",
+    "email": "Email",
+    "subject": "Asunto",
+    "subjectOrder": "Pedido",
+    "subjectTracking": "Tracking",
+    "subjectProduct": "Producto",
+    "subjectOther": "Otro",
+    "message": "Mensaje",
+    "send": "Enviar mensaje",
+    "messageSent": "Mensaje enviado. Te responderemos pronto.",
+    "address": "Dirección",
+    "hours": "Horario"
+  },
+  "legal": {
+    "termsTitle": "Términos y Condiciones",
+    "privacyTitle": "Política de Privacidad",
+    "lastUpdated": "Última actualización"
+  },
+  "errors": {
+    "notFound": {
+      "title": "Esta página no existe",
+      "subtitle": "Pero no te preocupes, te ayudamos a encontrar lo que buscas.",
+      "goHome": "Ir al inicio"
+    },
+    "serverError": {
+      "title": "Algo salió mal",
+      "subtitle": "Estamos trabajando en arreglarlo.",
+      "retry": "Intentar de nuevo",
+      "report": "Reportar problema"
+    }
+  },
+  "emptyStates": {
+    "orders": {
+      "title": "Aún no has hecho pedidos",
+      "subtitle": "Cuando hagas tu primer envío a Matanzas, lo verás aquí con todo el tracking en tiempo real.",
+      "cta": "Explorar catálogo"
+    },
+    "search": {
+      "title": "No encontramos resultados",
+      "subtitle": "Revisa la ortografía o prueba con otros términos.",
+      "popular": "Productos populares"
+    },
+    "category": {
+      "title": "No hay productos con estos filtros",
+      "subtitle": "Prueba con menos filtros o limpia la selección.",
+      "clearFilters": "Limpiar filtros"
+    },
+    "families": {
+      "title": "No tienes familias guardadas",
+      "subtitle": "Agrega a tus seres queridos en Matanzas para enviarles más rápido.",
+      "cta": "Agregar mi primer familiar"
+    }
+  },
+  "auth": {
+    "loginTitle": "Iniciar sesión",
+    "loginSubtitle": "Accede a tu cuenta de Yumury",
+    "registerTitle": "Crear cuenta",
+    "registerSubtitle": "Únete a Yumury y empieza a enviar",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "name": "Nombre completo",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "noAccount": "¿No tienes cuenta?",
+    "hasAccount": "¿Ya tienes cuenta?",
+    "loginButton": "Iniciar sesión",
+    "registerButton": "Crear cuenta",
+    "recoverTitle": "Recuperar contraseña",
+    "recoverSubtitle": "Te enviaremos un enlace para restablecer tu contraseña"
   }
 }

@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans, Geist_Mono } from "next/font/google";
 import { getLocale, getMessages } from "next-intl/server";
 import { Providers } from "@/components/common/providers";
+import { organizationJsonLd } from "@/lib/metadata";
 import "./globals.css";
 
 const jakarta = Plus_Jakarta_Sans({
@@ -56,10 +57,22 @@ export default async function RootLayout({
       suppressHydrationWarning
       className={`${jakarta.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+      </head>
       <body
         suppressHydrationWarning
         className="min-h-full flex flex-col font-sans bg-background text-foreground"
       >
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-primary focus:px-6 focus:py-3 focus:text-sm focus:font-semibold focus:text-primary-foreground focus:shadow-lg"
+        >
+          Saltar al contenido principal
+        </a>
         <Providers locale={locale} messages={messages}>
           {children}
         </Providers>
