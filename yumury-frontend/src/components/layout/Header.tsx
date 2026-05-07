@@ -2,20 +2,27 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { ShoppingBag, User } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { User } from "lucide-react";
+import { CartIcon } from "@/components/icons/CartIcon";
 import { useCartStore, selectTotalItems } from "@/lib/stores/cart-store";
+import { useUIStore } from "@/lib/stores/ui-store";
+import { useAuthStore } from "@/lib/stores/auth-store";
 import { Button } from "@/components/ui/button";
 import { Logo } from "./Logo";
 import { MegaMenuCategories } from "./MegaMenuCategories";
 import { MobileNav } from "./MobileNav";
 import { SearchCommand, SearchTrigger } from "./SearchCommand";
 import { ThemeToggle } from "./ThemeToggle";
+import { UserMenu } from "./UserMenu";
+import { CartDrawer } from "@/components/cart/CartDrawer";
 import { cn } from "@/lib/utils";
 
 export function Header() {
   const [scrolled, setScrolled] = React.useState(false);
   const cartCount = useCartStore(selectTotalItems);
+  const { toggleCart } = useUIStore();
+  const user = useAuthStore((s) => s.user);
 
   React.useEffect(() => {
     let ticking = false;
@@ -84,38 +91,60 @@ export function Header() {
             <div className="hidden sm:block">
               <ThemeToggle />
             </div>
+
+            {/* User — auth-aware */}
+            {user ? (
+              <div className="hidden sm:block">
+                <UserMenu />
+              </div>
+            ) : (
+              <Button
+                asChild
+                variant="ghost"
+                size="icon-sm"
+                aria-label="Mi cuenta"
+                className="hidden sm:inline-flex"
+              >
+                <Link href="/auth/login">
+                  <User className="h-4 w-4" />
+                </Link>
+              </Button>
+            )}
+
+            {/* Cart button */}
             <Button
-              asChild
-              variant="ghost"
-              size="icon-sm"
-              aria-label="Mi cuenta"
-              className="hidden sm:inline-flex"
-            >
-              <Link href="/auth/login">
-                <User className="h-4 w-4" />
-              </Link>
-            </Button>
-            <Button
-              asChild
               variant="ghost"
               size="icon-sm"
               aria-label={`Carrito${cartCount ? ` (${cartCount})` : ""}`}
               className="relative"
+              onClick={toggleCart}
             >
-              <Link href="/carrito">
-                <ShoppingBag className="h-4 w-4" />
+              <CartIcon
+                className="h-[22px] w-[22px]"
+                filled={cartCount > 0}
+                strokeWidth={cartCount > 0 ? 2 : 1.75}
+              />
+              <AnimatePresence>
                 {cartCount > 0 && (
-                  <span className="absolute -right-0.5 -top-0.5 flex h-4 min-w-[16px] items-center justify-center rounded-full bg-gradient-brand px-1 text-[10px] font-bold text-white shadow-md">
+                  <motion.span
+                    key="badge"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    exit={{ scale: 0 }}
+                    transition={{ type: "spring", stiffness: 500, damping: 30 }}
+                    className="absolute -right-0.5 -top-0.5 flex h-4 min-w-[16px] items-center justify-center rounded-full bg-gradient-brand px-1 text-[10px] font-bold text-white shadow-md"
+                  >
                     {cartCount > 99 ? "99+" : cartCount}
-                  </span>
+                  </motion.span>
                 )}
-              </Link>
+              </AnimatePresence>
             </Button>
           </div>
         </div>
       </motion.header>
 
       <SearchCommand />
+      <CartDrawer />
     </>
   );
 }

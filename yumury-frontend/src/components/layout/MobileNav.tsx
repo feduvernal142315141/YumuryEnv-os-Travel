@@ -70,7 +70,7 @@ export function MobileNav() {
                     {cat.subcategories.map((sub) => (
                       <li key={sub.id}>
                         <Link
-                          href={`/categoria/${cat.slug}/${sub.slug}`}
+                          href={`/categoria/${cat.slug}?sub=${sub.slug}`}
                           onClick={() => setOpen(false)}
                           className="block text-sm text-foreground-secondary hover:text-foreground"
                         >

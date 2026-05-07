@@ -91,7 +91,7 @@ export function SearchCommand() {
       .flatMap((c) =>
         c.subcategories.map((s) => ({
           name: `${s.name} · ${c.name}`,
-          slug: `${c.slug}/${s.slug}`,
+          href: `/categoria/${c.slug}?sub=${s.slug}`,
           parent: c.name,
         })),
       )
@@ -99,11 +99,18 @@ export function SearchCommand() {
       .slice(0, 4);
   }, [trimmed, showResults]);
 
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter" && query.trim()) {
+      navigate(`/buscar?q=${encodeURIComponent(query.trim())}`, query.trim());
+    }
+  };
+
   return (
     <CommandDialog open={open} onOpenChange={setOpen}>
       <CommandInput
         value={query}
         onValueChange={setQuery}
+        onKeyDown={handleKeyDown}
         placeholder="Buscar productos, combos, categorías…"
       />
       <CommandList>
@@ -210,8 +217,8 @@ export function SearchCommand() {
             <CommandGroup heading="Categorías">
               {matchingCategories.map((c) => (
                 <CommandItem
-                  key={c.slug}
-                  onSelect={() => navigate(`/categoria/${c.slug}`, query)}
+                  key={c.href}
+                  onSelect={() => navigate(c.href, query)}
                   className="gap-3"
                 >
                   <ArrowUpRight className="h-4 w-4 text-foreground-muted" />

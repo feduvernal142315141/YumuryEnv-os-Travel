@@ -16,3 +16,5 @@ export {
 export { useUIStore } from "./ui-store";
 
 export { useCheckoutStore, type CheckoutStep, type CheckoutShipping } from "./checkout-store";
+
+export { useAuthStore } from "./auth-store";

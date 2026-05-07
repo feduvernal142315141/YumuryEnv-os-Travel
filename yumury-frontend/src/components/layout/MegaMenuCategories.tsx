@@ -84,7 +84,7 @@ export function MegaMenuCategories() {
                       {activeCategory.subcategories.map((sub) => (
                         <li key={sub.id}>
                           <Link
-                            href={`/categoria/${activeCategory.slug}/${sub.slug}`}
+                            href={`/categoria/${activeCategory.slug}?sub=${sub.slug}`}
                             className="group flex flex-col gap-0.5"
                           >
                             <span className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">
